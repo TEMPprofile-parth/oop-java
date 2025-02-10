@@ -1,15 +1,27 @@
 package com.Parth.ExceptionH;
 
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 0;
+
+                // Exception is an event that interrupts the normal flow of the program
+                // (Dividing by Zero, file not found, mismatch input type)
+                // surround any dangerous section of code with a try{} block
+                // try{}, catch{}, finally{} --> optional
+
+//        int a = 5;
+//        int b = 0;
+        Scanner sc = new Scanner(System.in);
         try {
-           int c = div (a, b);
+//           int c = div (a, b);
+            System.out.println("Enter no");
+            int a = sc.nextInt();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+//            System.out.println("Enter a number!");
         } finally {
-            System.out.println("always run");
+            System.out.println("this will always run");
         }
     }
 
